@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Fitnessjas</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <h1>Fitness Tracker</h1>
+
+<div class="card">
+  <h3>Log Food</h3>
+  <input id="food" placeholder="Food (egg, rice)">
+  <input id="calories" type="number" placeholder="Calories">
+  <button onclick="addFood()">Add Food</button>
+</div>
+
+<div class="card">
+  <h3>Log Weight</h3>
+  <input id="weight" type="number" placeholder="Weight (kg)">
+  <button onclick="addWeight()">Add Weight</button>
+</div>
+
+<div class="card summary">
+  <h3>Daily Summary</h3>
+  <p id="totalCalories"></p>
+  <p id="latestWeight"></p>
+</div>
+
+<div class="card">
+  <h3>Food Log</h3>
+  <div id="foodLog"></div>
+</div>
+
+<div class="card">
+  <h3>Weight Log</h3>
+  <div id="weightLog"></div>
+</div>
+
+<button class="danger" onclick="clearAll()">Clear All Data</button>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
